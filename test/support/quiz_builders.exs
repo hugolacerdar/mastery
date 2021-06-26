@@ -15,7 +15,7 @@ defmodule QuizBuilders do
         category: :addition,
         instructions: "Add the numbers",
         raw: "<%= @left %> + <%= @right %>",
-        generator: addition_generators(single_digits()),
+        generators: addition_generators(single_digits()),
         checker: &addition_checker/2
       ],
       overrides
