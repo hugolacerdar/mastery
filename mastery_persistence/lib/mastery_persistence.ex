@@ -15,7 +15,7 @@ defmodule MasteryPersistence do
         updated_at: response.timestamp
       }
       |> Response.record_changeset
-      |> Response.insert!
+      |> Repo.insert!
       in_transaction.(response)
     end)
 
