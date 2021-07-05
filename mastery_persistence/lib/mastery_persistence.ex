@@ -31,6 +31,6 @@ defmodule MasteryPersistence do
       group_by: [r.quiz_title, r.email]
     )
     |> Repo.all
-    Enum.into(Map.new)
+    |> Enum.into(Map.new)
   end
 end
